@@ -23,22 +23,22 @@ describe("Saludor", () => {
         let resultado = kbot.saludar("Sebastian", 22)
         expect(resultado).toEqual("Buenas noches Sebastian");
     });
-    it("Saludar a Joselito en español por la tarde", () => {
-        let kbot = new Kbot("ES");
+    it("Saludar a Joselito en ingles por la tarde", () => {
+        let kbot = new Kbot("EN");
         let resultado = kbot.saludar("Joselito", 15)
-        expect(resultado).toEqual("Buenas tardes Joselito");
+        expect(resultado).toEqual("Good afternoon Joselito");
     });
 
-    it("Saludar a Joselito en español por la mañana", () => {
-        let kbot = new Kbot("ES");
+    it("Saludar a Joselito en ingles por la mañana", () => {
+        let kbot = new Kbot("EN");
         let resultado = kbot.saludar("Joselito", 0)
-        expect(resultado).toEqual("Buenos días Joselito");
+        expect(resultado).toEqual("Good morning Joselito");
     });
-    it("Saludar a Joselito en español por la noche", () => {
-        let kbot = new Kbot("ES");
+    it("Saludar a Joselito en ingles por la noche", () => {
+        let kbot = new Kbot("EN");
         let resultado = kbot.saludar("Joselito", 20)
-        expect(resultado).toEqual("Buenas noches Joselito");
+        expect(resultado).toEqual("Good evening Joselito");
     });
-    
+
   });
   

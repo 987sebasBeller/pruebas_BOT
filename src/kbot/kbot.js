@@ -10,8 +10,9 @@ module.exports = class KBot {
     this.buenasNoches = {};
     this.buenasNoches["ES"] = "Buenas noches ";
     this.buenasNoches["EN"] = "Good evening ";
+    
   }
-  saludar(nombre, hora = new Date().getHours(),genero) {
+  saludar(nombre, hora = new Date().getHours(),genero='') {
     let mensaje;
     switch (true) {
       case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].includes(hora):
